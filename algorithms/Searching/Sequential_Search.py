@@ -7,12 +7,15 @@ Sequential Search: In this, the list or array is traversed sequentially and ever
 """
 Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set. It is the easiest searching algorithm
 """
+
+# Iterative Method
 def linear_seach(a, n):
     for i, j in enumerate(a):
         if j == n:
             return i
     return -1
 
+# Recursive Method
 def linear_search_recur(arr, key, size):
     if (size == 0):
         return -1
